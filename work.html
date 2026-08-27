@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Work — SUMMER</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-work">
+  <a class="skip-link" href="#work-grid">Skip to content</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">SUMMER</a>
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list" class="nav-toggle">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">HOME</a></li>
+          <li><a class="active" href="work.html">WORK</a></li>
+          <li><a href="experience.html">EXPERIENCE</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="work-hero" aria-labelledby="work-title">
+      <h1 id="work-title" class="page-heading">Work</h1>
+      <p class="muted">Selected projects. Click a project to view details. Use filters to refine the archive.</p>
+    </section>
+
+    <section class="filters" aria-label="Project filters">
+      <div class="filter-buttons" role="tablist" aria-label="Project categories">
+        <button class="filter-button active" data-filter="All" aria-pressed="true">ALL</button>
+        <button class="filter-button" data-filter="PRODUCTION">PRODUCTION</button>
+        <button class="filter-button" data-filter="VISUAL">VISUAL</button>
+        <button class="filter-button" data-filter="VIDEO">VIDEO</button>
+        <button class="filter-button" data-filter="CREATIVE">CREATIVE</button>
+        <button class="filter-button" data-filter="ADDITIONAL">ADDITIONAL</button>
+      </div>
+    </section>
+
+    <section id="work-grid" class="grid work-grid" aria-live="polite" aria-atomic="false">
+      <!-- Project cards inserted by JS from projects/data.json -->
+      <noscript>
+        <p class="muted">This page requires JavaScript to load project content. Please enable JavaScript or view individual project pages directly in /projects/</p>
+      </noscript>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© SUMMER — Portfolio</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

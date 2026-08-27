@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SUMMER — Creative / Visual / Experience Designer</title>
+  <meta name="description" content="SUMMER — Communication Arts student (Performance Communication). Creative, Visual, Experience Designer — portfolio." />
+  <!-- Free Google Fonts (replace if you prefer local fonts) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="page-home">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">SUMMER</a>
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <button id="nav-toggle" aria-expanded="false" aria-controls="nav-list" class="nav-toggle">Menu</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="work.html">WORK</a></li>
+          <li><a href="experience.html">EXPERIENCE</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <h1 id="hero-title" class="hero-title">SUMMER</h1>
+        <p class="hero-sub">Creative / Visual / Experience Designer</p>
+        <p class="hero-caption">
+          SUMMER is a Communication Arts student specializing in Performance Communication with interests in creative and visual storytelling, video editing, post-production, and developing concepts from idea to final production.
+        </p>
+        <p>
+          <a class="cta" href="work.html">VIEW WORK</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- FEATURED WORK -->
+    <section id="featured" class="featured-work" aria-labelledby="featured-title">
+      <h2 id="featured-title" class="section-title">Featured work</h2>
+      <div class="grid featured-grid" id="featured-grid">
+        <!-- Featured cards are rendered from projects/data.json by js/main.js.
+             If you prefer, replace these with static cards and link to /projects/project.html?id=slug -->
+      </div>
+    </section>
+
+    <hr class="separator" />
+
+    <section class="intro-note">
+      <p class="muted small">Designed for internships, creative studio applications, and postgraduate portfolios. Built to be edited easily — see README.md for editing instructions.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© SUMMER — Portfolio • Communication Arts, Performance Communication</p>
+      <p class="small muted">Made with HTML, CSS, and vanilla JavaScript • Deploy on GitHub Pages</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
