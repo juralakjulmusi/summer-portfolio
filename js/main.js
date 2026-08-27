@@ -15,7 +15,8 @@
 
 const NAV_TOGGLE_ID = 'nav-toggle';
 const NAV_LIST_ID = 'nav-list';
-const PROJECTS_JSON = '/projects/data.json'; // If hosted in root, this path works
+// Use relative path so GitHub Pages works when the site is hosted in a subpath
+const PROJECTS_JSON = 'projects/data.json';
 const featuredGrid = document.getElementById('featured-grid');
 const workGrid = document.getElementById('work-grid');
 
@@ -235,5 +236,5 @@ function qsAll(sel){
 }
 function escapeHtml(str){
   if(!str) return '';
-  return String(str).replace(/[&<>\"']/g, s=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;" }[s]));
+  return String(str).replace(/[&<>"']/g, s=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#39;" }[s]));
 }
